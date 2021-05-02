@@ -2,64 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a05a8573-d9f1-4027-a4d8-9d611aa28d13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiAuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@mdi/materialdesignicons-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@mdi/materialdesignicons-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@mdi/materialdesignicons-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@mdi/materialdesignicons-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/courses/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/courses/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/courses/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/courses/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/footer_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/omni-why-join-us.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slider1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slider2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slider3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/Router.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/http.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/middleware/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/Forbidden.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/Index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/NotFound.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/admin/Dashboard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/auth/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/auth/Register.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/public/Landing.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/modules/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/modules/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/store/subscriber.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/omni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/omni.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_132847_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_132847_create_courses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -266,7 +208,7 @@
       <workItem from="1619873869776" duration="9852000" />
       <workItem from="1619904607320" duration="37000" />
       <workItem from="1619904880477" duration="4171000" />
-      <workItem from="1619931193556" duration="25226000" />
+      <workItem from="1619931193556" duration="25262000" />
     </task>
     <servers />
   </component>
