@@ -15,6 +15,10 @@ class CreateCoursesTable extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
+            $table->string('image')->default('/images/course.png');
+            $table->string('cost')->nullable();
+            $table->string('title')->nullable();
+            $table->string('meta')->nullable();
             $table->timestamps();
         });
     }

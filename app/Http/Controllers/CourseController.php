@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Course;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class CourseController extends Controller
 {
@@ -14,7 +15,7 @@ class CourseController extends Controller
      */
     public function index()
     {
-        //
+         return Course::all();
     }
 
     /**
@@ -35,7 +36,47 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = Validator::make($request->all(), [
+            'title' => 'required',
+            'image' => 'required',
+            'meta' => 'required',
+            'cost' => 'required',
+        ]);
+
+        if ($data->fails()) {
+            return response()->json(
+                [
+                    'errors' => $data->errors(),
+                ], 422);
+        }
+
+
+        if($request->image){
+            $name = time().'.' . explode('/', explode(':', substr($request->image, 0, strpos($request->image, ';')))[1])[1];
+            \Image::make($request->image)->save(public_path('storage/').$name);
+            $named = '/storage/'.$name;
+
+
+            $request->merge(['image' => $named]);
+
+            // $img = Image::make('foo.jpg')->resize(300, 200);
+        }else{
+            $request->merge(['image' => '/storage/course.png']);
+        }
+
+        $course = new Course();
+
+        $course->title = $request->title;
+        $course->image = $request->image;
+        $course->meta = $request->meta;
+        $course->cost = $request->cost;
+
+        $course->save();
+
+        return response()->json([
+            'status'  =>'success',
+            'message' => 'New Course added Successfully'
+        ]);
     }
 
     /**
@@ -67,9 +108,49 @@ class CourseController extends Controller
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Course $course)
+    public function update(Request $request, $id)
     {
-        //
+        $data = Validator::make($request->all(), [
+            'title' => 'required',
+            'image' => 'required',
+            'meta' => 'required',
+            'cost' => 'required',
+        ]);
+
+        if ($data->fails()) {
+            return response()->json(
+                [
+                    'errors' => $data->errors(),
+                ], 422);
+        }
+
+
+        if($request->image){
+            $name = time().'.' . explode('/', explode(':', substr($request->image, 0, strpos($request->image, ';')))[1])[1];
+            \Image::make($request->image)->save(public_path('storage/').$name);
+            $named = '/storage/'.$name;
+
+
+            $request->merge(['image' => $named]);
+
+            // $img = Image::make('foo.jpg')->resize(300, 200);
+        }else{
+            $request->merge(['image' => '/storage/course.png']);
+        }
+
+        $course =   Course::where('id', $request->id);
+
+        $course->title = $request->title;
+        $course->image = $request->image;
+        $course->meta = $request->meta;
+        $course->cost = $request->cost;
+
+        $course->save();
+
+        return response()->json([
+            'status'  =>'success',
+            'message' => 'New Course added Successfully'
+        ]);
     }
 
     /**
