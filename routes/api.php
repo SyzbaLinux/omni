@@ -14,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::post('/auth/login',[\App\Http\Controllers\ApiAuthController::class,'login']);
+Route::get('allcourses',[\App\Http\Controllers\CourseController::class,'index']);
+Route::post('/auth/register_user', [\App\Http\Controllers\ApiAuthController::class,'register'] );
+Route::middleware('auth:sanctum')->get('/auth/user',  [\App\Http\Controllers\ApiAuthController::class,'authUser']  );
+
+
+Route::group([
+    'middleware' => 'auth:sanctum',
+
+], function ($router) {
+
+    Route::resource('/courses', \App\Http\Controllers\CourseController::class);
+
 });
