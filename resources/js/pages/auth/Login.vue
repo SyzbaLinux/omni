@@ -108,7 +108,7 @@
 
         async created(){
             if(this.authenticated){
-                this.$router.push('dashboard')
+                this.$router.push('/admin/dashboard')
             }
         },
 
@@ -120,10 +120,8 @@
 
             async login(){
 
-                await this.SignIn(this.form).then((res)=>{
-
-                    console.log(res)
-                    // this.$router.push('/admin/dashboard')
+                await this.SignIn(this.form).then((res)=>{ 
+                    this.$router.push('/admin/dashboard')
                 })
 
             },

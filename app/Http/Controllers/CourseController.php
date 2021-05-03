@@ -110,6 +110,8 @@ class CourseController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+       
         $data = Validator::make($request->all(), [
             'title' => 'required',
             'image' => 'required',
@@ -126,6 +128,7 @@ class CourseController extends Controller
 
 
         if($request->image){
+
             $name = time().'.' . explode('/', explode(':', substr($request->image, 0, strpos($request->image, ';')))[1])[1];
             \Image::make($request->image)->save(public_path('storage/').$name);
             $named = '/storage/'.$name;
@@ -138,12 +141,13 @@ class CourseController extends Controller
             $request->merge(['image' => '/storage/course.png']);
         }
 
-        $course =   Course::where('id', $request->id);
+        $course =   Course::where('id', $request->id)->first();
 
+         
         $course->title = $request->title;
         $course->image = $request->image;
-        $course->meta = $request->meta;
-        $course->cost = $request->cost;
+        $course->meta  = $request->meta;
+        $course->cost  = $request->cost;
 
         $course->save();
 

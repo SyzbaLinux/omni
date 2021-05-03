@@ -195,12 +195,15 @@
             },
 
             async save () {
-                if (this.editedIndex > -1) {                    axios.put('courses/'+this.newCourse.id,this.newCourse).then((res)=>{
+                if (this.editedIndex > -1) { 
+                    axios.put('courses/'+this.newCourse.id,this.newCourse).then((res)=>{
                         Swal.fire(
                             'Updated!',
                             'Course details updated successfully',
                             'success'
                         )
+
+                          this.initialize()
                     });
 
                 } else {

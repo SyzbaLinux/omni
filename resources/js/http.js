@@ -15,5 +15,5 @@ axios.defaults.baseURL = '/api';
 Vue.use(VueAxios, axios);
 
 export default {
-    root:  ''
+    root:  '/'
 };
